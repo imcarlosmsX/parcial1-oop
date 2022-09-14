@@ -1,0 +1,26 @@
+@startuml
+
+class Libreria {
+
+libros: diccionary
+
+lista_libros()
+prestar_libros()
+subir_libros()
+bajar_libros()
+entregar_libros()
+
+}
+
+Class User {
+
+name: str
+
+prestar_libros()
+entregar_libros()
+
+}
+
+Libreria"1" *-- "*" User
+
+@enduml
